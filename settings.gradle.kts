@@ -8,4 +8,4 @@ pluginManagement {
 	}
 }
 
-rootProject.name = "rtuuy"
+rootProject.name = "rtuuy-main"
