@@ -46,6 +46,7 @@ feedback or PRs targeting this approach, though you can always change it in your
 - `TestExtension.kt` includes an example extension that creates a `slap` command - this command works as both a
   message command and slash command, and allows you to slap other users with whatever you wish, defaulting to a
   `large, smelly trout`.
+- Make sure to run the `generateTranslationsClass` task before trying to run because you will see lots of errors in the code!!!
 
 To test the bot, we recommend using a `.env` file that looks like the following:
 
