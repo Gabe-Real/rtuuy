@@ -62,3 +62,5 @@ To learn more about KordEx and how to work with it, [please browse the documenta
 
 For more information on the KordEx Gradle plugin and what you can do with it,
 [please read this README](https://github.com/Kord-Extensions/gradle-plugins#kordex-plugin).
+
+If you have any questions about this bot or need help setting it up please join my discord server and staff there will help you out → https://discord.gabereal.co.uk/
