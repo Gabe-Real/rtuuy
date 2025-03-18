@@ -51,8 +51,32 @@ feedback or PRs targeting this approach, though you can always change it in your
 To test the bot, we recommend using a `.env` file that looks like the following:
 
 ```dotenv
-TOKEN=abc...
-TEST_SERVER=123...
+# General Settings
+# https://discord.com/developers
+TOKEN=BOT_TOKEN
+# ID of the server to use for testing
+TEST_SERVER=TEST_SERVER_ID
+# The URI used to connect to the MongoDB database
+ADAPTER_MONGODB_URI=mongodb://root:changeme@localhost:27017/?authSource=admin
+
+# Ban Sync Module
+# The servers to be used by the ban sync system (each server ID is to be separated by |)
+SYNCED_BAN_SERVERS=SERVER_ID_1, SERVER_ID_2
+# Determines whenever the ban sync should be actioned on or not
+DRY_RUN=true
+
+# System notifications module
+SYSTEM_NOTIFICATION_NTFY_TOPIC=rtuuy
+# If you want to use a custom NTFY server
+#SYSTEM_NOTIFICATION_NTFY_SERVER=
+# Authentication token if required
+#SYSTEM_NOTIFICATION_NTFY_TOKEN=
+# Comma-separated list of webhook URLs to post to
+#SYSTEM_NOTIFICATION_WEBHOOK_URLS=
+
+# DB
+DB_ROOT_USER=root
+DB_ROOT_PASS=changeme
 ```
 
 Create this file, fill it out, and run the `run` gradle task for testing in development.
