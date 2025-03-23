@@ -62,8 +62,8 @@ ADAPTER_MONGODB_URI=mongodb://root:changeme@localhost:27017/?authSource=admin
 # Ban Sync Module
 # The servers to be used by the ban sync system (each server ID is to be separated by |)
 SYNCED_BAN_SERVERS=SERVER_ID_1, SERVER_ID_2
-# Determines whenever the ban sync should be actioned on or not
-DRY_RUN=true
+# Determines whenever the ban sync should be actioned on or not (false by default - false = ban sync is on)
+DRY_RUN=false
 
 # System notifications module
 SYSTEM_NOTIFICATION_NTFY_TOPIC=rtuuy
